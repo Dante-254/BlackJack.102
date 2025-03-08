@@ -70,7 +70,7 @@ class Hand:
     def display(self, show_all_dealer_cards=False):
         print(f'''{'Dealer`s' if self.dealer else 'your'} hand:''')
         for index, card in enumerate(self.cards):
-            if index == 0 and self.dealer and  show_all_dealer_cards and not self.is_blackjack:
+            if index == 0 and self.dealer and  not show_all_dealer_cards and not self.is_blackjack():
                 print('Hidden')
             else:
                 print(card)
