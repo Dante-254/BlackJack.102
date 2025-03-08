@@ -136,10 +136,11 @@ class Game:
                 continue
 
             print('Final results')
-            print('Your hand', player_hand_value)
-            print('Dealer`s hand', dealer_hand_value)
+            print('Your hand:', player_hand_value)
+            print('Dealer`s hand:', dealer_hand_value)
 
             self.check_winner(player_hand, dealer_hand, game_over = True)
+        print('\nThanks for playing')
 
 
     def check_winner(self, player_hand, dealer_hand, game_over=False):
@@ -180,5 +181,4 @@ g.play()
 # hand = Hand()
 # hand.add_card(deck1.deal(2))
 # print(hand.cards[0], hand.cards[1])
-
 # hand.display()
